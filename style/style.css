@@ -1,0 +1,638 @@
+/* Made up by HoPHNi (hophni.pythonanywhere.com) */
+
+/* ====================================================== */
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*  */
+  @font-face {
+    font-family: Motter Corpus Std;
+    src: url(../fonts/MotterCorpusStd-Regular.otf);
+  }
+.wrapper{
+    min-width: 100%;
+    margin: 0 auto;
+}
+.container__text{
+  max-width: 777px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/*  */
+/* ====================================================== */
+
+/* ==== aside ==== */
+
+
+
+/* ==== aside end ==== */
+
+/* ====================================================== */
+
+/* ==== nav ==== */
+
+
+
+/* ==== nav end ==== */
+
+/* ====================================================== */
+
+/* ==== header ==== */
+
+.nav {
+  background: #FFFFFFB2;
+  padding: 17px 0;
+}
+.nav-container {
+  max-width: 1274px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+
+}
+.nav-content__list {
+  display: flex;
+}
+.nav-content__link {
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: center;
+
+  border-bottom: 3px solid #fff;
+  
+  color: #0B4141;
+  margin-right: 24px;
+  transition: all .3s;
+}
+.nav-content__link:hover{
+  border-color: #0B4141;
+  transition: all .5s;
+}
+.nav-content__button {
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: center;
+
+  color: #FFCCBC;
+  background: #0B4141;
+  border-radius: 124px;
+
+  padding: 12px 43.5px;
+  margin-left: 24px;
+
+}
+.header__intro {
+  margin-top: 95px;
+  background: url(../img/intro__bg.png);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.intro__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro__container {
+  max-width: 1224px;
+  margin: 0 auto;
+}
+.intro__text {
+  font-family: 'Motter Corpus Std';
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 128px;
+  max-width: 747px;
+  text-align: center;
+
+  color: #FFCCBC;
+}
+.intro__textz {
+  position: relative;
+  z-index: 2;
+  color: #0B4141;
+
+}
+.intro__img {
+  position: relative;
+  margin-top: -240px;
+  z-index: 1;
+}
+
+/* ==== header end ==== */
+
+/* ====================================================== */
+
+/* ==== main ==== */
+
+.main-intro {
+  min-height: 800px;
+  background-image: url(../img/Section-start__bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.main-intro__body{
+  text-align: center;
+}
+.main-intro__title {
+  font-family: 'Motter Corpus Std';
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 96px;
+  color: #FFFFFF;
+  
+  mix-blend-mode: normal;
+}
+.main-intro__text {
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 24px;
+  color: #FFFFFF;
+  
+}
+.main-intro__textend {
+  font-weight: 700;
+}
+
+.main-story {
+  background: #0B4141;
+  mix-blend-mode: normal;
+}
+.main-story__body {
+  display: flex;
+  min-height: 800px;
+}
+.main-story__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 115px 147px 85px 94px;
+  min-width: 50%;
+
+}
+.main-story__title {
+  font-family: 'Nunito Sans';
+  font-weight: 900;
+  font-size: 68px;
+  line-height: 72px;
+
+  color: #FFCCBC;
+}
+.main-story__text {
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #FFCCBC;
+  margin: 32px 0 48px;
+
+}
+.main-story__button {
+  border: 2px solid #FFCCBC;
+  border-radius: 100px;
+  padding: 14.5px 31px;
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFCCBC;
+}
+.main-story__img {
+  min-width: 50%;
+}
+
+.main-content {
+  margin: 96px 0;
+}
+.main-content__body {
+
+}
+.main-content__card {
+  display: flex;
+}
+.main-content__card:nth-child(2){
+  flex-direction: row-reverse;
+}
+.main-content__img{
+  min-width: 50%;
+}
+.main-content__description {
+  min-width: 50%;
+  padding: 96px 160px 96px 96px;
+}
+.main-content__title {
+  font-family: 'Nunito Sans';
+  font-weight: 900;
+  font-size: 68px;
+  line-height: 72px;
+
+  color: #FFCCBC;
+
+}
+.main-content__text {
+  margin: 32px 0 48px;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #0B4141;
+}
+.main-content__text:last-child{
+  margin-bottom: 0;
+}
+.main-content__subtext {
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #0B4141;
+}
+.main-magic {
+  padding: 117px 0 0;
+  background: rgba(245, 245, 245, 0.6);
+}
+.main-magic__description {
+  text-align: center;
+}
+.main-magic__title {
+  font-family: 'Motter Corpus Std';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 96px;
+
+  color: #FFCCBC;
+}
+.main-magic__text {
+  max-width: 890px;
+  margin: 29px auto 0;
+  margin-bottom: 39px;
+
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #0B4141;
+}
+.main-magic__boldtext {
+  font-weight: 700;
+}
+.main-magic__img {
+  min-width: 100%;
+}
+.feedback {
+  background-image: url(../img/feedback__bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 64px 15px 169.35px;
+}
+.feedback__content {
+}
+.feedback__title {
+  font-family: 'Nunito Sans';
+  font-weight: 900;
+  font-size: 68px;
+  line-height: 72px;
+  color: #FFFFFF;
+  margin: 0 0 64px;
+  text-align: center;
+  
+}
+.feedback__body {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.feedback__column {
+  max-width: 304px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.feedback__column:nth-child(2){
+  margin: 0 24px;
+}
+.feedback__card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+.feedback__card:nth-child(9) {
+  padding: 139px 20px 20px;
+}
+.feedback__card:nth-child(4),
+.feedback__card:nth-child(8),
+.feedback__card:nth-child(10){
+  margin-bottom: 0;
+}
+.feedback-card__text {
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #0B4141;
+  margin-bottom: 16px;
+}
+.feedback__author {
+  display: flex;
+}
+.feedback-author__img {
+}
+.feedback-author__description {
+  margin-left: 12px;
+}
+.feedback-author__name {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0B4141;
+  margin-bottom: 10px;
+
+}
+.feedback-author__profession {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #0B4141;
+
+}
+
+.main-detail {
+  background: url(../img/end-detail__bg.png);
+  padding-bottom: 31.35px;
+}
+.main-detail__body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main-detail__img {
+}
+.main-detail__description {
+  max-width: 506px;
+}
+.main-detail__title {
+  font-family: 'Nunito Sans';
+  font-weight: 900;
+  font-size: 68px;
+  line-height: 72px;
+  color: #0B4141;
+}
+.main-detail__text {
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #0B4141;
+  margin: 32px 0 48px;
+  
+}
+.main-detail__button {
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #0B4141;
+  border: 2px solid #0B4141;
+  border-radius: 100px;
+  padding: 14.5px 39px;
+}
+
+.main-end {
+  position: relative;
+}
+.main-end__body {
+  display: flex;
+
+}
+.main-end__description {
+  max-width: 50%;
+  max-width: 472px;
+  margin: 0 auto;
+  padding: 110px 0 93px;
+}
+.main-end__logo {
+  width: 118px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.main-end__title {
+  font-family: 'Nunito Sans';
+  font-weight: 900;
+  font-size: 68px;
+  line-height: 72px;
+  color: #0B4141;
+}
+.main-end__text {
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #0B4141;
+  margin: 32px 0 48px;
+
+}
+.main-end__button {
+  width: max-content;
+  padding: 14.5px 29px;
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #0B4141;
+  border: 2px solid #0B4141;
+  border-radius: 100px;
+}
+.main-end__img {
+  max-width: 50%;
+  object-fit: cover;
+}
+.main-end__light{
+  background: linear-gradient(51.34deg, #FFCCBC 10.28%, #FFFFFF 64.41%);
+  opacity: 0.9;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/* ==== main end ==== */
+
+/* ====================================================== */
+
+/* ==== footer ==== */
+
+.footer {
+  padding: 236px 0 101.28px;
+  background: #0B4141;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.footer__title {
+  font-family: 'Motter Corpus Std';
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 96px;
+  color: #FFCCBC;
+  max-width: 800px;
+
+}
+.footer__buttons {
+  margin-top: 48px;
+  display: flex;
+}
+.footer__button {
+  border: 2px solid #FFCCBC;
+  box-sizing: border-box;
+  border-radius: 300px;
+  padding: 21px 40px;
+
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #FFCCBC;
+  display: flex;
+  align-items: center;
+}
+.footer__button img{
+  margin-right: 12px;
+}
+.footer__button:first-child{
+  margin-right: 48px;
+}
+.footer__logo {
+  margin: 96px 0 0 96px;
+}
+.footer-logo__title {
+  font-family: 'Motter Corpus Std';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFCCBC;
+}
+.footer-logo__text {
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFCCBC;
+}
+
+/* ==== footer end ==== */
+
+/* ====================================================== */
